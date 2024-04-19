@@ -1,0 +1,36 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+	<changeSet author="Nikita Tambe" id="20220715">
+		<insert schemaName="event_service_db" tableName="event">
+			<column name="id" value="1" />
+			<column name="eventType" value="Birthday event" />
+			<column name="capacity" value="100" />
+			<column name="cost" value="35000" />
+			<column name="location" value="pune" />
+			<column name="contacts" value="1234567892" />
+			<column name="date" value="21/06/2024" />
+			<column name="itemName" value="Biryani" />
+			<column name="itemCost" value="18000" />
+			<column name="equipmentName" value="ice-cream" />
+			<column name="equipmentCost" value="2000" />
+		</insert>
+	</changeSet>
+	<changeSet author="Nikita Tambe" id="20220715-1">
+		<insert schemaName="event_service_db" tableName="event">
+			<column name="id" value="2" />
+			<column name="eventType" value="new year celebration" />
+			<column name="capacity" value="50" />
+			<column name="cost" value="15000" />
+			<column name="location" value="pune" />
+			<column name="contacts" value="9874567892" />
+			<column name="date" value="31/12/2024" />
+			<column name="itemName" value="Biryani" />
+			<column name="itemCost" value="8000" />
+			<column name="equipmentName" value="NA" />
+			<column name="equipmentCost" value="NA" />
+		</insert>
+	</changeSet>
+
+</databaseChangeLog>
