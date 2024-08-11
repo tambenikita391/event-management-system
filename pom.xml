@@ -57,27 +57,5 @@
 				</executions>
 			</plugin>
 		</plugins>
-		<plugin>
-      <groupId>com.spotify</groupId>
-      <artifactId>docker-maven-plugin</artifactId>
-      <version>1.2.0</version>
-      <executions>
-        <execution>
-          <goals>
-            <goal>build</goal>
-          </goals>
-        </execution>
-      </executions>
-      <configuration>
-        <imageName>${docker.image.prefix}/${project.artifactId}:${project.version}</imageName>
-        <dockerDirectory>src/main/docker</dockerDirectory>
-        <resources>
-          <resource>
-            <targetPath>/</targetPath>
-            <directory>${project.basedir}/src/main/docker</directory>
-          </resource>
-        </resources>
-      </configuration>
-    </plugin>
 	</build>
 </project>
