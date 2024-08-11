@@ -17,6 +17,12 @@ jobs:
          with:
            java-version: '21'
            distribution: 'temurin'
+
+       - name: check setup
+         run: 
+           java --version
+           ls -ltr
+      
        
        
     
