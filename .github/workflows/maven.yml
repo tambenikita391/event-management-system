@@ -28,6 +28,10 @@ jobs:
 
        - name: OSS scan
          run: mvn ossindex:audit
+
+       - name: OWASP scan
+         run: mvn org.owasp:dependency-check-maven:check
+      
       
        
        
