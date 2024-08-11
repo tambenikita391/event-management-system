@@ -25,6 +25,9 @@ jobs:
 
        - name: Perform google formatter check
          run: mvn com.spotify.fmt:fmt-maven-plugin:check
+
+       - name: OSS scan
+         run: mvn ossindex:audit
       
        
        
